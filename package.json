@@ -1,0 +1,27 @@
+{
+  "name": "boobles-bot",
+  "version": "1.0.0",
+  "description": "A serious attempt at a large scale Discord Bot with Discord.js",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "forever": "^2.0.0",
+    "mysql": "^2.18.1",
+    "sequelize": "^5.21.7",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haaffin/Boobles-Bot.git"
+  },
+  "author": "Easton Haaff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haaffin/Boobles-Bot/issues"
+  },
+  "homepage": "https://github.com/Haaffin/Boobles-Bot#readme"
+}

@@ -1,7 +1,9 @@
 const Discord = require('discord.js')
-const config = require('./botConfig.json')
 const client = new Discord.Client()
 const commands = require('./commands')
+
+const config = require('./botConfig.json')
+
 client.commands = new Discord.Collection();
 
 Object.keys(commands).map(key =>{
@@ -10,7 +12,7 @@ Object.keys(commands).map(key =>{
 
 
 client.on('ready', () => {
-    console.log('Boobles UPGRADED is online')
+    console.log('Boobles UPGRADED is online forever!')
 })
 
 client.on('message', msg => {
@@ -20,10 +22,11 @@ client.on('message', msg => {
     if(!client.commands.has(command)) return
     
     try{
-        client.commands.get(command).execute(msg, args)
+        client.commands.get(command).execute(client, msg, args)
     }catch(err){
         console.error(err)
         msg.reply('There was an error trying to call that command!')
     }
 })
+
 client.login(config.TOKEN)
