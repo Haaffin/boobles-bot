@@ -22,11 +22,13 @@ client.on('message', msg => {
     if(!client.commands.has(command)) return
     
     try{
-        client.commands.get(command).execute(msg, args)
+        client.commands.get(command).execute(msg, args, {client})
     }catch(err){
         console.error(err)
         msg.reply('There was an error trying to call that command!')
     }
+
+
 })
 
 client.login(config.TOKEN)
