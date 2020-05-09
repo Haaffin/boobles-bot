@@ -1,5 +1,6 @@
 module.exports = {
-    Ping: require('./ping.js'),
     Uptime: require('./uptime'),
-    Kill: require('./kill')
+    Kill: require('./kill'),
+    CreateTicket: require('./CreateTicket'),
+    DeleteTicket: require('./DeleteTicket'),
 }
