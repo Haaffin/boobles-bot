@@ -1,5 +1,5 @@
 module.exports = {
-    Uptime: require('./uptime'),
+    Help: require('./A_Help'),
     Kill: require('./kill'),
     CreateTicket: require('./CreateTicket'),
     DeleteTicket: require('./DeleteTicket'),

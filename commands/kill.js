@@ -14,6 +14,8 @@ module.exports = {
                 client.destroy()
                 console.log('Program terminated...')
             },3000)
+        } else{
+            console.info(`${msg.author.username} tried to kill the bot`)
         }
     },
   };

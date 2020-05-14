@@ -12,6 +12,9 @@ Object.keys(commands).map(key =>{
 
 client.on('ready', () => {
     console.log('Ready')
+    client.user.setPresence({ game: { name: '!help' }, status: 'online' })
+    .then(console.log)
+    .catch(console.error)
     
 })
 
