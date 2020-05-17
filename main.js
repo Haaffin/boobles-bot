@@ -11,10 +11,11 @@ Object.keys(commands).map(key =>{
 })
 
 client.on('ready', () => {
-    console.log('Ready')
+    console.log('Online')
     client.user.setPresence({ activity: { name: '!help' }, status: 'online' })
-    .then(console.log)
+    .then(console.log('Sucessfull Set Presence'))
     .catch(console.error)
+    console.log('Ready for commands')
     
 })
 
