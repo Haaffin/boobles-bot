@@ -14,7 +14,8 @@ module.exports = {
         .setDescription('List of all commands')
         .addFields(
             {name: '!ticket', value: 'Creates a support channel. **NOTE: SERVER MUST HAVE A ROLE CALLED ``Support Staff``**'},
-            {name: '!resolve', value: 'Marks the ticket as solved and deletes it'}
+            {name: '!resolve', value: 'Marks the ticket as solved and deletes it'},
+            {name: '!bug', value:'Find a bug with my commands? Report it to the dev with this command! Simply use !bug <issue>!'}
         )
         msg.channel.send(helpEmbed)
     },

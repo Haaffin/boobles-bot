@@ -1,4 +1,4 @@
-const botConfig = require('../botConfig.json')
+const botConfig = require('../../botConfig.json')
 module.exports = {
     //make sure to include the ! as thats the prefix for the bot. You can change this to whatever you want, just make sure you use the same one
     //for every command
