@@ -4,5 +4,9 @@ module.exports = {
     CreateTicket: require('../ticketSystem/CreateTicket'),
     DeleteTicket: require('../ticketSystem/DeleteTicket'),
     BugReport: require('../bugReport'),
-    Update: require('../update')
+    Update: require('../update'),
+    He: require('../pronouns/he'),
+    She: require('../pronouns/she'),
+    They: require('../pronouns/they'),
+    
 }
