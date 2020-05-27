@@ -10,6 +10,7 @@ module.exports = {
             msg.channel.delete()
         } else{
             console.error(msg.author.username + " tried to remove the wrong channel. Whoops")
+            msg.channel.send("This channel isn't an open ticket! You can only use this command in a ticketed channel.")
         }
     },
   };

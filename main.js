@@ -53,4 +53,6 @@ client.on('message', async msg => {
 
 })
 
+process.on('unhandledRejection', err => console.error('Uncaught Promise Rejection', err))
+
 client.login(config.TOKEN)
