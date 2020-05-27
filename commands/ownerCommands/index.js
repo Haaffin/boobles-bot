@@ -8,5 +8,6 @@ module.exports = {
     He: require('../pronouns/he'),
     She: require('../pronouns/she'),
     They: require('../pronouns/they'),
+    Play: require('../music/play')
     
 }

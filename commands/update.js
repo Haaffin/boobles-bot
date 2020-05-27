@@ -17,5 +17,6 @@ module.exports = {
             {name: '!bug', value: 'Find a bug with my commands? Report it to the dev with this command! Simply use !bug <issue>!'}
         )
         msg.channel.send(updateEmbed)
+        console.log(`${msg.author.username} checked the update!`)
     },
   };

@@ -4,10 +4,14 @@
   "description": "A serious attempt at a large scale Discord Bot with Discord.js",
   "main": "main.js",
   "dependencies": {
+    "@discordjs/opus": "^0.3.2",
     "discord.js": "^12.2.0",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
     "forever": "^2.0.0",
     "mysql": "^2.18.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "ytdl-core": "^2.1.4"
   },
   "devDependencies": {},
   "scripts": {

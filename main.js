@@ -21,15 +21,19 @@ client.on('ready', () => {
 
 client.on("guildCreate", guild => {
     console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-    client.user.setGame(`on ${client.guilds.size} servers`);
+    client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    .then(console.log('Sucessfully Updated Presence'))
+    .catch(console.error);
 });
 
 client.on("guildDelete", guild => {
     console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-    client.user.setGame(`on ${client.guilds.size} servers`);
+    client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    .then(console.log('Sucessfully Updated Presence'))
+    .catch(console.error);
 });
 
-client.on('message', msg => {
+client.on('message', async msg => {
     const args = msg.content.split(/ +/)
     const command = args.shift().toLowerCase()
 
