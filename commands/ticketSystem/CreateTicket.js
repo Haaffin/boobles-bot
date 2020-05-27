@@ -32,7 +32,6 @@ module.exports = {
         setTimeout(() => {
             const newChannel = msg.guild.channels.cache.find(channel => channel.name === `ticket-${msg.author.id}`)
             newChannel.send(`${msg.author}, Please send all relevant information about your issue here. Be as precise as possible, so we can help you quicker!`)
-            console.log(newChannel)
         },500)
 
         
