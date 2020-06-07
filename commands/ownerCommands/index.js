@@ -7,7 +7,5 @@ module.exports = {
     Update: require('../update'),
     He: require('../pronouns/he'),
     She: require('../pronouns/she'),
-    They: require('../pronouns/they'),
-
-    
+    They: require('../pronouns/they'),  
 }
