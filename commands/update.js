@@ -13,8 +13,9 @@ module.exports = {
         .setTitle('New Update!')
         .setDescription('Change log:')
         .addFields(
-            {name: 'Bug Report', value: "New commands have been added!"},
-            {name: '!bug', value: 'Find a bug with my commands? Report it to the dev with this command! Simply use !bug <issue>!'}
+            {name: 'Update', value: "New commands have been added!"},
+            {name: '!ban', value: 'Someone in your server being too much of a butthead? Ban em. Just do !ban <tag the user>'},
+            {name: '!kick', value: 'Someone being a butt head but you think a ban is too mean? Kick em from the server instead. Just do !kick <tag the user>'}
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)
