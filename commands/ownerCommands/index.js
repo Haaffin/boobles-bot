@@ -9,5 +9,6 @@ module.exports = {
     She: require('../pronouns/she'),
     They: require('../pronouns/they'), 
     Ban: require('../modCommands/ban'),
-    Kick: require('../modCommands/kick') 
+    Kick: require('../modCommands/kick'), 
+    Play: require('../musicCommands/play')
 }
