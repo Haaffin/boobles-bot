@@ -14,8 +14,9 @@ module.exports = {
         .setDescription('Change log:')
         .addFields(
             {name: 'Update', value: "New commands have been added!"},
-            {name: '!ban', value: 'Someone in your server being too much of a butthead? Ban em. Just do !ban <tag the user>'},
-            {name: '!kick', value: 'Someone being a butt head but you think a ban is too mean? Kick em from the server instead. Just do !kick <tag the user>'}
+            {name: "Music commands!', value: 'Boobles finally has Music commands! Be warned though, this is a very early stage. I haven't played with javascript music commands before so this is a learning process."},
+            {name: '!play', value: 'simply type !play <name of artist + song> to play that song!'},
+            {name: 'IMPORTANT NOTES!', value: 'THERE IS NO QUEUE SYSTEM YET. IF YOU USE THE COMMAND AGAIN IT WILL SKIP YOUR CURRENT SONG. IF YOU COME ACROSS ANY BUGS, PLEASE REPORT THEM TO ME IN THE SUPPORT SERVER AT !support'}
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)

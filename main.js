@@ -12,8 +12,8 @@ Object.keys(commands).map(key =>{
 
 client.on('ready', () => {
     console.log('Online')
-    //client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    //client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
     .then(console.log('Sucessfully Set Presence'))
     .catch(console.error)
     console.log('Ready for commands')

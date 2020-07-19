@@ -3,6 +3,7 @@ module.exports = {
     Kill: require('./kill'),
     CreateTicket: require('../ticketSystem/CreateTicket'),
     DeleteTicket: require('../ticketSystem/DeleteTicket'),
+    Support: require('../support'),
     BugReport: require('../bugReport'),
     Update: require('../update'),
     He: require('../pronouns/he'),
@@ -10,5 +11,5 @@ module.exports = {
     They: require('../pronouns/they'), 
     Ban: require('../modCommands/ban'),
     Kick: require('../modCommands/kick'), 
-    Play: require('../musicCommands/play')
+    Play: require('../musicCommands/play'),
 }
