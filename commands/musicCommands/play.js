@@ -29,7 +29,7 @@ module.exports = {
         voiceChannel.join().then(async connection => {
             let url = await searchYouTubeAsync(args);
             let stream = ytdl(url, { filter: 'audioonly' });
-            let dispatcher = connection.play(stream);
+            let dispatcher = connection.play(stream, {volume: .5});
           
             dispatcher.on('end', () => voiceChannel.leave());
             isReady = true;
