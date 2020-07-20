@@ -8,15 +8,15 @@ module.exports = {
     //For clarification, args and the client aren't required for every command, they're just here if you ever plan 
     //on using a command that requires them
     execute(msg, args, {client}) {
-        const helpEmbed = new Discord.MessageEmbed()
+        const helpMainEmbed = new Discord.MessageEmbed()
         .setColor('#800000')
         .setTitle('Help')
         .setDescription('List of all commands')
         .addFields(
-            {name: '!ticket', value: 'Creates a support channel. **NOTE: SERVER MUST HAVE A ROLE CALLED ``Support Staff``**'},
-            {name: '!resolve', value: 'Marks the ticket as solved and deletes it'},
-            {name: '!bug', value:'Find a bug with my commands? Report it to the dev with this command! Simply use !bug <issue>!'}
+            {name: '!music', value: 'returns Music commands'},
+            {name: '!admin', value: 'returns Admin commands'},
+            {name: '!misc', value: 'returns Misc commands'}
         )
-        msg.channel.send(helpEmbed)
+        msg.channel.send(helpMainEmbed)
     },
   };

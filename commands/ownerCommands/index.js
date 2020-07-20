@@ -1,5 +1,8 @@
 module.exports = {
-    Help: require('../A_Help'),
+    Help: require('../helpCommands/A_Help'),
+    Admin: require('../helpCommands/admin'),
+    Misc: require('../helpCommands/misc'),
+    Music: require('../helpCommands/music'),
     Kill: require('./kill'),
     CreateTicket: require('../ticketSystem/CreateTicket'),
     DeleteTicket: require('../ticketSystem/DeleteTicket'),
