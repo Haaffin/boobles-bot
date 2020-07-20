@@ -11,7 +11,7 @@ module.exports = {
         const miscHelp = new Discord.MessageEmbed()
         .setColor('#800000')
         .setTitle('Misc')
-        .setDescription('List of all Misc miscHelpcommands')
+        .setDescription('List of all Misc commands')
         .addFields(
             {name: '!ticket', value: 'Creates a support channel. **NOTE: SERVER MUST HAVE A ROLE CALLED ``Support Staff``**'},
             {name: '!resolve', value: 'Marks the ticket as solved and deletes it'},
