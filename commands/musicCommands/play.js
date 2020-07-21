@@ -11,7 +11,7 @@ module.exports = {
     //on using a command that requires them
     execute(msg, args, {client}) {
 
-        async function searchYouTubeAsync(args) {
+        async function search(args) {
             var video = await youtube.searchVideos(args.toString().replace(/,/g,' '));
             console.log(video.url);
             console.log(typeof String(video.url));
@@ -27,7 +27,7 @@ module.exports = {
         }
         
         voiceChannel.join().then(async connection => {
-            let url = await searchYouTubeAsync(args);
+            let url = await search(args);
             let stream = ytdl(url, { filter: 'audioonly' });
             let dispatcher = connection.play(stream, {volume: .5});
           

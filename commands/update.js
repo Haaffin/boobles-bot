@@ -14,7 +14,7 @@ module.exports = {
         .setDescription('Change log:')
         .addFields(
             {name: 'Update', value: "New commands have been added!"},
-            {name: "Music commands!', value: 'Boobles finally has Music commands! Be warned though, this is a very early stage. I haven't played with javascript music commands before so this is a learning process."},
+            {name: "Music commands!", value: "Boobles finally has Music commands! Be warned though, this is a very early stage. I haven't played with javascript music commands before so this is a learning process."},
             {name: '!play', value: 'simply type !play <name of artist + song> to play that song!'},
             {name: 'IMPORTANT NOTES!', value: 'THERE IS NO QUEUE SYSTEM YET. IF YOU USE THE COMMAND AGAIN IT WILL SKIP YOUR CURRENT SONG. IF YOU COME ACROSS ANY BUGS, PLEASE REPORT THEM TO ME IN THE SUPPORT SERVER AT !support'}
         )
