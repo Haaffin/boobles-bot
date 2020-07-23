@@ -12,13 +12,21 @@ Object.keys(commands).map(key =>{
 
 client.on('ready', () => {
     console.log('Online')
-    //client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    //client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
     .then(console.log('Sucessfully Set Presence'))
     .catch(console.error)
     console.log('Ready for commands')
     
 })
+
+client.on("guildCreate", guild => {
+    console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+});
+
+client.on("guildDelete", guild => {
+    console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
+});
 
 client.on('message', async msg => {
     const args = msg.content.split(/ +/)
