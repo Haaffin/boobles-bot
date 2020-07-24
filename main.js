@@ -10,15 +10,19 @@ Object.keys(commands).map(key =>{
     client.commands.set(commands[key].name, commands[key])
 })
 
+function updatePresence(){
+    //client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    .then(console.log('Sucessfully updated Presence'))
+    .catch(console.error)
+}
+
 client.on('ready', () => {
     console.log('Online')
-    client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    //client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    .then(console.log('Sucessfully Set Presence'))
-    .catch(console.error)
-    console.log('Ready for commands')
-    
+    updatePresence()
+    setInterval(updatePresence, 60000)
 })
+
 
 client.on("guildCreate", guild => {
     console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
