@@ -20,7 +20,7 @@ function updatePresence(){
 client.on('ready', () => {
     console.log('Online')
     updatePresence()
-    setInterval(updatePresence, 60000)
+    setInterval(updatePresence, 120000)
 })
 
 
