@@ -13,7 +13,8 @@ module.exports = {
         .setTitle('New Update!')
         .setDescription('Change log:')
         .addFields(
-            {name: 'Bug Fixes:', value: "It came to my attention that the ticket system wasn't working properly. Upon further investigation, the issue is the server in question did not have the required role in the server. I updated the bot so it no longer crashes on this error and insteads returns a message."}
+            {name: 'Bug Fixes:', value: "It appears I was an idiot. The ban and kick commands could've been used by anyone. Luckily, this has been fixed before it became an issue"},
+            {name: '!invite', value: 'Need to quickly create an invite to your server? use !invite and Boobles will do it for you! It creates an invite to the channel it was used in that lasts forever.'}
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)

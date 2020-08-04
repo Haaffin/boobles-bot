@@ -11,9 +11,9 @@ Object.keys(commands).map(key =>{
 })
 
 function updatePresence(){
-    //client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    .then(console.log('Sucessfully updated Presence'))
+    client.user.setPresence({ activity: { name: `!update || !help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    //client.user.setPresence({ activity: { name: `!help || ${client.guilds.cache.size} Servers`  }, status: 'online' })
+    //.then(console.log('Sucessfully updated Presence'))
     .catch(console.error)
 }
 

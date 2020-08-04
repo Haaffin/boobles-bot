@@ -25,7 +25,7 @@ module.exports = {
         if(!voiceChannel){
             return msg.channel.send('You must be in a voice channel to use this command')
         }
-        
+        //This project makes me wanna die
         voiceChannel.join().then(async connection => {
             let url = await search(args);
             let stream = ytdl(url, { filter: 'audioonly' });
