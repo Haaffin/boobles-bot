@@ -1,4 +1,5 @@
-const Discord = require('discord.js')
+const Discord = require('discord.js');
+const { name } = require('./musicCommands/play');
 
 module.exports = {
     //make sure to include the ! as thats the prefix for the bot. You can change this to whatever you want, just make sure you use the same one
@@ -13,8 +14,9 @@ module.exports = {
         .setTitle('New Update!')
         .setDescription('Change log:')
         .addFields(
-            {name: 'Bug Fixes:', value: "It appears I was an idiot. The ban and kick commands could've been used by anyone. Luckily, this has been fixed before it became an issue"},
-            {name: '!invite', value: 'Need to quickly create an invite to your server? use !invite and Boobles will do it for you! It creates an invite to the channel it was used in that lasts forever.'}
+            {name: 'Bug Fixes:', value: "Nothing to report"},
+            {name: 'Games!', value: 'Today marks the day that I begin to add some simple games to the mix! Starting with a simple 8ball command :)'},
+            {name: '!ball', value: 'Have a question that needs answered? Asked the magical 8ball! Simply type !ball <question to ask> and maybe the mystical 8ball will answer it for you!'}
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)
