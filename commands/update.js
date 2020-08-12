@@ -16,7 +16,6 @@ module.exports = {
         .addFields(
             {name: 'Bug Fixes:', value: "Nothing to report"},
             {name: 'New Website!', value: "We have a website now! It's not 100% complete yet, but it's there :) You can check it out using the !website command!"},
-            {name: 'Other notes:', value: " "}
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)
