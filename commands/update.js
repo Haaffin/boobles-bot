@@ -15,9 +15,8 @@ module.exports = {
         .setDescription('Change log:')
         .addFields(
             {name: 'Bug Fixes:', value: "Nothing to report"},
-            {name: 'Games!', value: 'Today marks the day that I begin to add some simple games to the mix! Starting with a simple 8ball command :)'},
-            {name: '!ball', value: 'Have a question that needs answered? Asked the magical 8ball! Simply type !ball <question to ask> and maybe the mystical 8ball will answer it for you!'},
-            {name: 'Other notes:', value: "If you guys have any suggestions on what to add to the bot, feel free to hop in my support server with !support and let me know! Same thing goes for any bugs you find. I'd love to know how to make the bot better for everyone! "}
+            {name: 'New Website!', value: "We have a website now! It's not 100% complete yet, but it's there :) You can check it out using the !website command!"},
+            {name: 'Other notes:', value: " "}
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)
