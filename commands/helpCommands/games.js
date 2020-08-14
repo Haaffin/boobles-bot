@@ -3,21 +3,18 @@ const Discord = require('discord.js')
 module.exports = {
     //make sure to include the ! as thats the prefix for the bot. You can change this to whatever you want, just make sure you use the same one
     //for every command
-    name: '!help', 
+    name: '!games', 
     description: 'description',
     //For clarification, args and the client aren't required for every command, they're just here if you ever plan 
     //on using a command that requires them
     execute(msg, args, {client}) {
-        const helpMainEmbed = new Discord.MessageEmbed()
+        const miscHelp = new Discord.MessageEmbed()
         .setColor('#800000')
-        .setTitle('Help')
-        .setDescription('List of all commands')
+        .setTitle('Games')
+        .setDescription('List of all Game commands')
         .addFields(
-            {name: '!music', value: 'returns Music commands'},
-            {name: '!admin', value: 'returns Admin commands'},
-            {name: '!games', value: 'returns Game commands'}
-            {name: '!misc', value: 'returns Misc commands'}
+            {name: '!ball', value: 'Ask the 8ball a question, and recieve guidance!'}
         )
-        msg.channel.send(helpMainEmbed)
+        msg.channel.send(miscHelp)
     },
   };
