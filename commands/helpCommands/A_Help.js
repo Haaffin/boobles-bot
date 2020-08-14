@@ -15,7 +15,6 @@ module.exports = {
         .addFields(
             {name: '!music', value: 'returns Music commands'},
             {name: '!admin', value: 'returns Admin commands'},
-            {name: '!games', value: 'returns Game commands'}
             {name: '!misc', value: 'returns Misc commands'}
         )
         msg.channel.send(helpMainEmbed)

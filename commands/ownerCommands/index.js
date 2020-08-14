@@ -14,5 +14,6 @@ module.exports = {
     Play: require('../musicCommands/play'),
     Invite: require('../modCommands/invite'),
     Ball: require('../games/8ball'),
-    Website: require('../website')
+    Website: require('../website'),
+    Games: require('../helpCommands/games')
 }

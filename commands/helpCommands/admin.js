@@ -16,6 +16,7 @@ module.exports = {
             {name: '!kick', value: 'Someone being a butthead in your server? Kick em out by using !kick <@user>'},
             {name: '!ban', value: "Someone being a butthead in your server but a kick isn't good enough? ban em by using !ban <@user>"},
 
+
         )
         msg.channel.send(adminHelp)
     },
