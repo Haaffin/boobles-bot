@@ -15,5 +15,6 @@ module.exports = {
     Invite: require('../modCommands/invite'),
     Ball: require('../games/8ball'),
     Website: require('../website'),
-    Games: require('../helpCommands/games')
+    Games: require('../helpCommands/games'),
+    Urban: require('../urban')
 }
