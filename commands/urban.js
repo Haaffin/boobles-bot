@@ -16,10 +16,7 @@ module.exports = {
 
         if(msg.channel.nsfw === undefined || msg.channel.nsfw === false){
             msg.channel.send('This command can only be used in a NSFW channel')
-        } else{
-            if(!args){
-                msg.reply('no args')
-            } else{
+        }else{
                 if (!args.length) {
                     return msg.channel.send('You gotta tell me what to look for, dude.');
                 }
