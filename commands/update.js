@@ -15,7 +15,8 @@ module.exports = {
         .setDescription('Change log:')
         .addFields(
             {name: 'Bug Fixes:', value: "Nothing to report"},
-            {name: 'New Website!', value: "We have a website now! It's not 100% complete yet, but it's there :) You can check it out using the !website command!"},
+            {name: 'New Command!', value: " "},
+            {name: '!urban', value: "!urban allows you to look up a term on Urban Dictionary! However, due to the nature of some of the content on Urban, the command can only be used in channels marked as NSFW."},
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)
