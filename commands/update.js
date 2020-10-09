@@ -15,7 +15,7 @@ module.exports = {
         .setDescription('Change log:')
         .addFields(
             {name: 'Bug Fixes:', value: "Nothing to report"},
-            {name: '!urban', value: "!urban allows you to look up a term on Urban Dictionary! However, due to the nature of some of the content on Urban, the command can only be used in channels marked as NSFW."},
+            {name: 'Other Notes:', value: "We're officially verified now! Thank you all so much for your support. I started a new job so development on the bot is going to slow down sadly :( I will also no longer be using the !update command so make sure you get into the support server to keep up with future updates. You can find the invite link using !support"},
         )
         msg.channel.send(updateEmbed)
         console.log(`${msg.author.username} checked the update!`)
