@@ -4,7 +4,7 @@ const Discord = require ('discord.js')
 module.exports = {
     //make sure to include the ! as thats the prefix for the bot. You can change this to whatever you want, just make sure you use the same one
     //for every command
-    name: '!bug', 
+    name: '?bug', 
     description: 'description',
     //For clarification, args and the client aren't required for every command, they're just here if you ever plan 
     //on using a command that requires them
@@ -22,9 +22,9 @@ module.exports = {
                 .setDescription(`New Bug Report in: ${msg.guild.name}`)
                 .addFields(
                     {name: 'Bug Report author:', value: `${msg.author.username}`},
-                    {name: 'Bug Report:', value: `${args}`}
+                    {name: 'Bug Report:', value: `${args.toString().replace(/,/g,' ')}`}
                 )
-                user.send(bugEmbed)
+                client.channels.cache.get('774701113257230358').send(bugEmbed)
             }
         })
     },
