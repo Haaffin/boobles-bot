@@ -17,9 +17,10 @@ function updatePresence(){
 }
 
 client.on('ready', () => {
+    console.log(`${client.guilds.size} Servers`)
+    console.log(`${client.users.cache.size} Users`)
     console.log('Online')
-    updatePresence()
-    setInterval(updatePresence, 120000)
+    client.user.setPresence({ activity: { name: `!help || !support` }, status: 'online' })
 })
 
 
