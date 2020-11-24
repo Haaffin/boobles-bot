@@ -9,15 +9,6 @@ module.exports = {
     //For clarification, args and the client aren't required for every command, they're just here if you ever plan 
     //on using a command that requires them
     execute(msg, args, {client}) {
-        const updateEmbed = new Discord.MessageEmbed()
-        .setColor('#800000')
-        .setTitle('New Update!')
-        .setDescription('Change log:')
-        .addFields(
-            {name: 'Bug Fixes:', value: "Nothing to report"},
-            {name: 'Other Notes:', value: "We're officially verified now! Thank you all so much for your support. I started a new job so development on the bot is going to slow down sadly :( I will also no longer be using the !update command so make sure you get into the support server to keep up with future updates. You can find the invite link using !support"},
-        )
-        msg.channel.send(updateEmbed)
-        console.log(`${msg.author.username} checked the update!`)
+        msg.channel.send('This command is no longer supported. Use the Support Server to keep up with bot updates! You can find the support server at: https://discord.gg/7xZcjkS')
     },
   };
