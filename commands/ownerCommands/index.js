@@ -16,5 +16,6 @@ module.exports = {
     Ball: require('../games/8ball'),
     Website: require('../website'),
     Games: require('../helpCommands/games'),
-    Urban: require('../urban')
+    Urban: require('../urban'),
+    Dad: require('../dadJoke')
 }
