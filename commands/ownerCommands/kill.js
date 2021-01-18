@@ -2,7 +2,7 @@ const botConfig = require('../../botConfig.json')
 module.exports = {
     //make sure to include the ! as thats the prefix for the bot. You can change this to whatever you want, just make sure you use the same one
     //for every command
-    name: '.kill', 
+    name: '!kill', 
     description: 'description',
     //For clarification, args and the client aren't required for every command, they're just here if you ever plan 
     //on using a command that requires them
@@ -15,7 +15,8 @@ module.exports = {
                 console.log('Program terminated...')
             },3000)
         } else{
-            console.info(`${msg.author.tag} tried to kill the bot`)
+            console.info()
+            client.channels.cache.get('774701113257230358').send(`${msg.author.tag} tried to kill the bot`)
         }
     },
   };
