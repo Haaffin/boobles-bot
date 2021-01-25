@@ -10,12 +10,6 @@ Object.keys(commands).map(key =>{
     client.commands.set(commands[key].name, commands[key])
 })
 
-function updatePresence(){
-    //client.user.setPresence({ activity: { name: `!update || !website || ${client.guilds.cache.size} Servers`  }, status: 'online' })
-    client.user.setPresence({ activity: { name: `${client.guilds.cache.size} Servers || ${client.users.cache.size} Users`  }, status: 'online' })
-    .catch(e => console.error(e))
-}
-
 client.on('ready', () => {
     console.log(`${client.guilds.cache.size} Servers`)
     console.log(`${client.users.cache.size} Users`)
@@ -54,4 +48,4 @@ client.on('message', async msg => {
 
 process.on('unhandledRejection', err => console.error('Uncaught Promise Rejection', err))
 
-client.login(config.TOKEN)
+client.login(process.env.Token)
