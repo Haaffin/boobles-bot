@@ -48,4 +48,4 @@ client.on('message', async msg => {
 
 process.on('unhandledRejection', err => console.error('Uncaught Promise Rejection', err))
 
-client.login(process.env.Token)
+client.login(process.env.TOKEN)
