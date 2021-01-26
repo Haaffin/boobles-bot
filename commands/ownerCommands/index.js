@@ -11,7 +11,7 @@ module.exports = {
     Update: require('../update'),
     Ban: require('../modCommands/ban'),
     Kick: require('../modCommands/kick'), 
-    Play: require('../musicCommands/play'),
+    //Play: require('../musicCommands/play'),
     Invite: require('../modCommands/invite'),
     Ball: require('../games/8ball'),
     Website: require('../website'),
