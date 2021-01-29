@@ -41,6 +41,7 @@ module.exports = {
                         { name: 'Rating', value: `${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.` },
                     );
                 msg.channel.send(embed);
+                msg.delete()
             }
     },
   };

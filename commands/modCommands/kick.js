@@ -14,6 +14,7 @@ module.exports = {
                     member.kick()
                     .then(() => {
                         msg.reply(`Successfully kicked ${user.username}. They can rejoin later though.`)
+                        msg.delete()
                     })
                     .catch( err => {
                         console.error(err)
@@ -23,9 +24,11 @@ module.exports = {
             }
             else {
                 msg.reply('No user was found. Did you forget to tag them?')
+                msg.delete()
             }
         }else{
             msg.channel.send('You must be an admin to use this command')
+            msg.delete()
         }
     },
   };

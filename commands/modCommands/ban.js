@@ -14,6 +14,7 @@ module.exports = {
                     member.ban()
                     .then(() => {
                         msg.reply(`Successfully banned ${user.username}`)
+                        msg.delete()
                     })
                     .catch( err => {
                         console.error(err)
@@ -23,9 +24,11 @@ module.exports = {
             }
             else {
                 msg.reply('No user was found. Did you forget to tag them?')
+                msg.delete()
                 }
             } else{
                 msg.channel.send('You must be an admin to use this command')
+                msg.delete()
             }
     },
   };

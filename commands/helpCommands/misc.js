@@ -19,8 +19,11 @@ module.exports = {
             {name: '!invite', value: 'creates a permanent invite link to the server the command was used in!'},
             {name: '!support', value: 'Creates an invite link so you can join the support server!'},
             {name: '!website', value: 'Send the link to my new website!'},
-            {name: '!update', value: 'Keep up with the latest updates to the bot by checking this command!'}
+            {name: '!dad', value: 'Sends a random dad joke to the channel it was used in!'},
+            {name: '!urban', value: 'Looks up whatever you want on Urban Dictionary! **requires the channel to be NSFW locked**'},
+            {name: '!suggest', value: 'Sends a command suggestion to be voted on in the Support Server!'}
         )
         msg.channel.send(miscHelp)
+        msg.delete()
     },
   };

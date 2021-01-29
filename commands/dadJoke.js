@@ -13,5 +13,6 @@ module.exports = {
 
         
         msg.channel.send(joke)
+        msg.delete()
     },
   };
