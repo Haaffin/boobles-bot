@@ -7,5 +7,6 @@ module.exports = {
     //on using a command that requires them
     execute(msg, args, {client}) {
         msg.channel.send('You can find the new website here: https://boobles-bot.tech')
+        msg.delete()
     },
   };

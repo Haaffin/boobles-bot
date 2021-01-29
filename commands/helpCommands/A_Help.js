@@ -1,4 +1,5 @@
-const Discord = require('discord.js')
+const Discord = require('discord.js');
+const games = require('./games');
 
 module.exports = {
     //make sure to include the ! as thats the prefix for the bot. You can change this to whatever you want, just make sure you use the same one
@@ -15,8 +16,11 @@ module.exports = {
         .addFields(
             {name: '!music', value: 'returns Music commands'},
             {name: '!admin', value: 'returns Admin commands'},
-            {name: '!misc', value: 'returns Misc commands'}
+            {name: '!misc', value: 'returns Misc commands'},
+            {name: '!games', value: 'returns Game commands'}
         )
         msg.channel.send(helpMainEmbed)
+
+        msg.delete()
     },
   };

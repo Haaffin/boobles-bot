@@ -10,6 +10,7 @@ module.exports = {
             .then(invite => {
                 msg.reply(`Invite created: ${invite}`)
                 console.log(`Created invite for ${msg.guild.name}: ${invite}`)
+                msg.delete()
             })
             .catch(e => console.error(e))
     },

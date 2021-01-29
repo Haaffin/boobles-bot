@@ -7,5 +7,6 @@ module.exports = {
     //on using a command that requires them
     execute(msg, args, {client}) {
         msg.reply('You can join the support server at: https://discord.gg/7xZcjkS')
+        msg.delete()
     },
   };
