@@ -17,5 +17,6 @@ module.exports = {
     Website: require('../website'),
     Games: require('../helpCommands/games'),
     Urban: require('../urban'),
-    Dad: require('../dadJoke')
+    Dad: require('../dadJoke'),
+    Suggestion: require('../suggest')
 }
