@@ -2,7 +2,6 @@ const Discord = require('discord.js')
 const client = new Discord.Client()
 const commands = require('./commands/ownerCommands')
 
-const config = require('./botConfig.json')
 
 client.commands = new Discord.Collection();
 
@@ -11,8 +10,6 @@ Object.keys(commands).map(key =>{
 })
 
 client.on('ready', () => {
-    console.log(`${client.guilds.cache.size} Servers`)
-    console.log(`${client.users.cache.size} Users`)
     console.log('Online')
     client.user.setPresence({ activity: { name: `!help || !support` }, status: 'online' })
 })
