@@ -22,7 +22,7 @@ module.exports = {
             )
             .setTimestamp()
     
-            client.channels.cache.get('774701113257230358').send(suggestEmbed).then(suggestEmbed => {
+            client.channels.cache.get('804647785164308490').send(suggestEmbed).then(suggestEmbed => {
                 suggestEmbed.react('✅')
                 suggestEmbed.react('❌')
             })
