@@ -18,5 +18,6 @@ module.exports = {
     Games: require('../helpCommands/games'),
     Urban: require('../urban'),
     Dad: require('../dadJoke'),
-    Suggestion: require('../suggest')
+    Suggestion: require('../suggest'),
+    Accept: require('../supportCommands/accept')
 }

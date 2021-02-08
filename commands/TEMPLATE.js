@@ -3,9 +3,7 @@ module.exports = {
     //for every command
     name: '!name', 
     description: 'description',
-    //For clarification, args and the client aren't required for every command, they're just here if you ever plan 
-    //on using a command that requires them
     execute(msg, args, {client}) {
-        //code here
+
     },
   };
