@@ -14,6 +14,7 @@ module.exports = {
             //if message is empty, tell the person who used it to add a bug report or it won't be sent
             if(args == ""){
                 msg.channel.send(`${msg.author}, Cannot send an empty Report. Please add details about the issue you are having by using !bug <issue here>`)
+                msg.delete
             } else{
                 //sends the bug report directly to me
                 const bugEmbed = new Discord.MessageEmbed()
@@ -25,6 +26,7 @@ module.exports = {
                     {name: 'Bug Report:', value: `${args.toString().replace(/,/g,' ')}`}
                 )
                 client.channels.cache.get('774701113257230358').send(bugEmbed)
+                msg.delete()
             }
         })
     },
