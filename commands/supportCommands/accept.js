@@ -14,6 +14,7 @@ module.exports = {
             }
 
             member.roles.add(acceptedRole).catch(console.error)
+            msg.delete()
 
         } else{
             return
